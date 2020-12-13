@@ -7,3 +7,5 @@ include(UseJava)
 add_jar(java-test Test.java)
 
 add_custom_target(rust-test rustc test.rs -o rust-test SOURCES test.rs)
+
+add_executable(c-test test.c)
